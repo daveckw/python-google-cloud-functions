@@ -48,11 +48,6 @@ Create a new branch (git checkout -b feature_branch).
 Commit your changes (git commit -am 'Add a new feature').
 Push to the branch (git push origin feature_branch).
 Create a new Pull Request.
-License
-Include the license for your project. Common open-source licenses are MIT, Apache 2.0, and GPL.
 
-This project is licensed under the MIT License.
-
-```
-
-```
+## License
+This project is licensed under the MIT License.  
