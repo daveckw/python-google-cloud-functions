@@ -1,0 +1,3 @@
+gcloud functions deploy hello_world --runtime python310 --trigger-http --allow-unauthenticated --entry-point hello_world --source . --set-env-vars OPENAI_API_KEY=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  --memory 1024MB
+
+https://https://us-central1-simply-nice-app.cloudfunctions.net/hello_world?input_text=What%20is%20the%20DVelada
