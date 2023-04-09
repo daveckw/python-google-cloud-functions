@@ -1,4 +1,4 @@
-# Custom-Knowledge-Based Querying with ChatGPT
+## Custom-Knowledge-Based Querying with ChatGPT
 
 This project is a Python backend service that runs on Google Cloud Functions. It utilizes ChatGPT to provide custom knowledge-based querying by reading an `index.json` file from Firebase Storage and using it as a Llama index for generating responses.
 
