@@ -14,7 +14,7 @@ This project is designed to be deployed as a Google Cloud Function. Follow the o
 
 Deploy using script below in the command line:
 
-```gcloud functions deploy hello_world --runtime python310 --trigger-http --allow-unauthenticated --entry-point hello_world --source . --set-env-vars OPENAI_API_KEY=YOUR_SECRET_KEY --memory 1024MB
+```gcloud functions deploy hello_world --runtime python310 --trigger-http --allow-unauthenticated --entry-point hello_world --source . --set-env-vars OPENAI_API_KEY=YOUR_SECRET_KEY --memory 1024MB```
 
 Change YOUR_SECRET_KEY to your own OpenAI secret key
 
