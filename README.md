@@ -12,8 +12,9 @@ This project is a Python backend service that runs on Google Cloud Functions. It
 
 This project is designed to be deployed as a Google Cloud Function. Follow the official [Google Cloud Functions documentation](https://cloud.google.com/functions/docs) to set up and deploy the function.
 
-Deploy using script below in the command line:  
-gcloud functions deploy hello_world --runtime python310 --trigger-http --allow-unauthenticated --entry-point hello_world --source . --set-env-vars OPENAI_API_KEY=YOUR_SECRET_KEY --memory 1024MB
+Deploy using script below in the command line:
+
+```gcloud functions deploy hello_world --runtime python310 --trigger-http --allow-unauthenticated --entry-point hello_world --source . --set-env-vars OPENAI_API_KEY=YOUR_SECRET_KEY --memory 1024MB
 
 Change YOUR_SECRET_KEY to your own OpenAI secret key
 
@@ -51,3 +52,4 @@ License
 Include the license for your project. Common open-source licenses are MIT, Apache 2.0, and GPL.
 
 This project is licensed under the MIT License.
+```
