@@ -1,4 +1,4 @@
-# Knowledge-Based Querying with ChatGPT
+# Custom-Knowledge-Based Querying with ChatGPT
 
 This project is a Python backend service that runs on Google Cloud Functions. It utilizes ChatGPT to provide custom knowledge-based querying by reading an `index.json` file from Firebase Storage and using it as a Llama index for generating responses.
 
@@ -11,6 +11,11 @@ This project is a Python backend service that runs on Google Cloud Functions. It
 ## Installation & Deployment
 
 This project is designed to be deployed as a Google Cloud Function. Follow the official [Google Cloud Functions documentation](https://cloud.google.com/functions/docs) to set up and deploy the function.
+
+Deploy using script below in the command line:
+gcloud functions deploy hello_world --runtime python310 --trigger-http --allow-unauthenticated --entry-point hello_world --source . --set-env-vars OPENAI_API_KEY=YOUR_SECRET_KEY --memory 1024MB
+
+Change YOUR_SECRET_KEY to your own OpenAI secret key
 
 ### Prerequisites
 
@@ -33,7 +38,7 @@ Make a GET request to the deployed Cloud Function with an `input_text` query par
 
 ## http
 
-GET https://<your-cloud-function-url>/hello_world?input_text=<your-query-text>
+GET https://"your-cloud-function-url"/hello_world?input_text="your-query-text"
 
 ## Contributing
 
